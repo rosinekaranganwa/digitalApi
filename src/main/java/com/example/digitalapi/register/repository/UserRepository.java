@@ -1,4 +1,8 @@
 package com.example.digitalapi.register.repository;
 
-public interface UserRepository {
+import com.example.digitalapi.register.model.UserRegister;
+import org.springframework.data.jpa.repository.JpaRepository;
+
+public interface UserRepository extends JpaRepository<UserRegister,Long> {
 }
+
